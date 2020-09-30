@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset = "UTF-8">
+	<link rel = "stylesheet" href = "quark.css">
+	<link rel = "stylesheet" href = "https://fonts.googleapis.com/css?family=Lato">	
+	<script src = "to-do.js"></script>
+	<title>To Do | Homepage</title>
+	<style>
+		body{
+			font-family: Lato;
+			margin: 0;
+			padding: 0;
+			height: 100%;
+		}
+		
+		ul{
+			list-style-type: none;
+		}
+		
+		#cont{
+			height: 50vh;
+		}
+		
+		footer{
+			clear: both;
+		}
+	</style>	
+</head>
+<body class = "bg-green">
+	<header class = "bg-green bg-blue font-white padded text-c">
+		<h1>TO DO LIST</h1>
+		<h3>Get your sh!t done!</h3><br>
+		<input type = "text" class = "input bordered border-green" id = "newTask" placeholder = "Enter a task..."><br><br>
+		<button class = "btn-green" id = "addTask" onclick = "addTask()"> Add task!</button>
+	</header>	
+	<div class = "row col-full padded" id = "cont">
+		<div class = "col-full">
+			<ul id = "taskList" class = "font-white">
+			</ul>
+			<br>
+			<p class = "text-c font-white"><strong>Double click</strong> on a task to mark it as <i>completed</i> or <i>deleted</i>.</p>
+		</div>	
+	</div>
+	<footer class = "row col-full text-c bg-blue font-white padded">
+		<p>This is a sh!tty app designed and programmed by Diestro Corleone.</p><br><p><a href = "mailto:matias.perez.mcd@gmail.com" class = "font-green">matias.perez.mcd@gmail.com</a></p>
+	</footer>
+</body>
+</html>
